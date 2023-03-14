@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    text-align: center;
+    width: 99%;
+    background-color: rgb(192, 41, 212);
+    height: 200px;
+    color: white;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+nav{
+    border-radius: 25px;
+    background-color: lightblue;
+    height: 100px;
+    margin: 10px;
+}
+
+section{
+    border-radius: 25px;
+    height: 715px;
+    background-color: aquamarine;
+    width: 59%;
+    float: left;
+    margin: 10px;
+    
+}
+
+article{
+    background-color: orange;
+    height: 130px;
+    border-radius: 25px;
+    color: white;
+    margin: 10px;
+
+}
+
+aside{
+    background-color:blanchedalmond;
+    height: 715px;
+    width: 37%;
+    float: right;
+    border-radius: 25px;
+    margin: 10px;
+
+}
+
+footer{
+    background-color: green;
+    width: 99%;
+    height: 200px;
+    border-radius: 25px;
+    float: left;
+    margin: 10px;
+}

@@ -1,0 +1,154 @@
+*{
+  box-sizing: border-box;
+}
+
+/*----------------NAV---------------------*/
+
+#header1 , #footer{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    color: white;
+}
+
+#logo{
+    height: 100%;
+}
+#logoLetras{
+    height: 100%;
+}
+#PanelLogo, #PanelLetras, #PanelLogo{
+    height: 100%;
+}
+#PanelRedes{
+    text-align: right;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+#redes{
+    text-align: right;
+    color: rgb(112, 112, 112);
+    margin-left: 10px;
+}
+#navbar{
+    background-color: rgb(112, 112, 112);
+    text-align: right;
+}
+i:hover{
+    color: rgb(0, 174, 255);
+    text-shadow: 1px 1px 2px rgb(40, 2, 255);
+}
+nav>a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+a:hover{
+    color: rgb(0, 174, 255);
+    text-shadow: 1px 1px 2px rgb(40, 2, 255);
+}
+
+
+
+
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 20em;
+}
+
+
+.titulo{
+  color: white;
+  font-size: 5em;
+  text-align: center;
+    
+}
+.post-titulo{
+  color: rgb(46, 109, 182);
+  text-align: center;
+}
+
+
+
+
+  /*Tipos*/
+.tipo1{
+  color: white;
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  border-radius: 2em;
+  margin: 5em;
+  height: 30em;
+  position: relative;
+}
+.tipo1:hover{
+  box-shadow: 50px 50px 100px 1px rgba(15, 119, 255, 0.719); /*https://speedlogic.com.co/*/
+}
+.imagen1{
+  width: 65%;
+  position: absolute;
+  left: -20%;
+  top: 20%;
+}
+.franquisias{
+  float: right;
+  margin-top: 7%;
+  margin-right: 5%;
+  font-size: 3em;
+}
+/*-----------------------------------------------------------------------------------------------------------------------*/
+.tipo2{
+  color: white;
+  background: linear-gradient(90deg, rgba(23,177,105,1) 0%, rgba(50,222,132,1) 100%);
+  border-radius: 2em;
+  margin: 5em;
+  height: 30em;
+  position: relative;
+}
+.tipo2:hover{
+  box-shadow: 30px 30px 100px 1px rgba(93, 238, 64, 0.719);
+}
+.imagen2{
+  width: 45%;
+  position: absolute;
+  left: 70%;
+  top: 20%;
+}
+.gaming{
+  float: left;
+  margin-top: 7%;
+  margin-right: 5%;
+  font-size: 3em;
+}
+/*-----------------------------------------------------------------------------------------------------------------------*/
+.tipo3{
+  color: white;
+  background: linear-gradient(90deg, rgba(108,108,108,1) 0%, rgba(150,150,150,1) 49%, rgba(194,194,194,1) 100%);
+  border-radius: 2em;
+  margin: 5em;
+  height: 30em;
+  position: relative
+}
+.tipo3:hover{
+  box-shadow: 30px 30px 100px 1px rgba(160, 160, 160, 0.719);
+}
+.imagen3{
+  width: 50%;
+  position: absolute;
+  left: -10%;
+  top: 50%;
+}
+
+
+
+
+
+
+#footer{
+  background-color: rgb(0, 0, 0);
+  height: 100px;
+  color: white;
+  border-top: 1px rgb(95, 95, 95) solid;
+}
+  

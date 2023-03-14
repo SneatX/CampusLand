@@ -1,0 +1,65 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 150px 50% auto;
+            /*Cada auto corresponde a 1 columna */
+            background-color: #2196f3;
+            padding: 10px;
+            height: 700px;
+            gap: 1em;
+            row-gap: 2em;
+            column-gap: 1%;
+        }
+
+        [class*="grid-item"] {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+        /* normalmente se cuenta con lineas, con span se cuentan espacios, la cantidad de espacios que va a ocupar*/
+        .grid-item1{
+            grid-column-start: 1;
+            grid-column-end: 3;  /* Va hasta la 3 linea*/
+        }
+        /* .grid-item3{
+            grid-column: 1/ span 2;  Va hasta la 3 columna
+        } */
+        .grid-item5{
+            grid-row-start: 2;  /*arranca en la linea 2*/
+            grid-row-end: 4;    /*acaba en la linea 2*/
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Elementos de cuadricula</h1>
+    <p>Un diseño de cuadricula debe tener un elemento principal con el <em>mostrar</em> propiedad establecida en
+        <em>grid</em> o <em>inline-grid</em></p>
+    <div class="grid-container">
+        <div class="grid-item1">1</div>
+        <div class="grid-item2">2</div>
+        <div class="grid-item3">3</div>
+        <div class="grid-item4">4</div>
+        <div class="grid-item5">5</div>
+        <div class="grid-item6">6</div>
+        <div class="grid-item7">7</div>
+        <div class="grid-item8">8</div>
+        <div class="grid-item9">9</div>
+    </div>
+</body>
+
+</html>

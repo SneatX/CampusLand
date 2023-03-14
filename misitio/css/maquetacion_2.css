@@ -1,0 +1,58 @@
+/*Estilos cajas*/
+
+/*con class es .
+con id es numeral*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#caja1{
+    width: 100%;
+    background-color: blue;
+    height: 200px;
+}
+
+#caja2{
+    width: 50%;
+    height: 400px;
+    background-color: aqua;
+    float: left;
+}
+
+#caja3{
+    width: 50%;
+    height: 400px;
+    background-color: lightgray;
+    float: right;
+    
+}
+
+#caja4{
+    width: 70%;
+    height: 800px;
+    background-color:gray;
+    float: left;
+    
+}
+
+#caja5{
+    width: 30%;
+    height: 400px;
+    background-color:gold;
+    float: right;
+    
+}
+
+#caja6{
+    width: 30%;
+    height: 400px;
+    background-color:red;
+    float: right;
+    
+}
+
+
+
+

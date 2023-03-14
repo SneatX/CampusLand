@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: aqua;
+            padding: 2%;
+            height: 700px;
+            gap: 1em;
+
+        }
+
+        [class*="grid-item"] {
+            background-color: orange;
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        .grid-item1{
+            grid-column: 1/ span 3;
+        }
+        
+        .grid-item2{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .grid-item4{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">header</div>
+        <div class="grid-item2">section</div>
+        <div class="grid-item3">aside</div>
+        <div class="grid-item4">footer</div>
+    </div>
+</body>
+
+</html>

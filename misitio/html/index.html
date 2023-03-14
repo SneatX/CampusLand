@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio</title>
+    <link rel="shortcut icon" href="../ico/web_icon.png" type="image/x-icon">
+</head>
+<body bgcolor="lightblue" background="../img/background.jpg">
+    <!-- asi se ponen comentarios -->
+    <a name ="menu"></a>
+    <h3>MENU</h3>
+    <ol>
+        <li>
+            <a href="#parrafos" > Párrafos </a>
+            <ol type="A">
+                <li>
+                    <a href = "#tipos_titulos">tipos de titulos</a>
+                    
+                </li>
+                <li>
+                    <a href = "#caracteristicas_formato">caracteristicas de un formato</a>
+                    
+                </li>
+
+                <li>
+                    <a href = "#saltos_linea">saltos de linea</a>
+                    
+                </li>
+
+            </ol>
+        </li>
+
+        <li>
+            <a href = "#listas_desordenadas" >Listas no ordenadas </a>
+        </li>
+
+        <li>
+            <a href="#listas_ordenadas" >Listas ordenadas</a>
+        </li>
+
+        <li>
+            <a href="#vinculos" >Vinculos</a>
+        </li>
+
+        <li> 
+            <a href="#tablas">Tablas</a>
+        </li>
+
+        <li> <a href="#formularios">Formularios</a></li>
+    
+    </ol>
+
+
+    <!-- ETIQUETAS DE FORMATO DE TEXTO-->
+
+    <a name="parrafos" ><h1 id = "tipos_titulos">tipos de titulos </h1></a>
+
+    
+    <h1>Título con h1</h1>
+    <h2>Título con h2</h2>
+    <h3>Título con h3</h3>
+    <h4>Título con h4</h4>
+    <h5>Título con h5</h5>
+    <h6>Título con h6</h6>
+    <p>texto normal con p</p>
+    
+    <!-------------- DARLE CARACTERISTICAS A UN FORMATO-------------->
+    <a name="caracteristicas_formato" ><h3>Caracteristicas de un formato</h3></a>
+    
+    <!-- el hr me hace una linea, con width la limito por porcentaje-->
+    <h1 align = "center">Título con h1 centrado</h1>
+    <hr width="60%" align = "center" > <!-- hace una linea y la alineo al centro-->
+
+    <h1 align = "left">Título con h1 a la izquierda</h1>
+    <hr width="60%" align = "left" > <!-- hace una linea y la alineo a la izquierda-->
+
+    <h1 align = "right">Título con h1 a la derecha</h1>
+    <hr width="60%" align = "right" > <!-- hace una linea y la alineo a la derecha-->
+
+                <!-- PARRAFOS -->
+
+    <!-- negrilla-->
+    <p>Parrafos en <b>negrilla con b</b></p>
+    <p>Parrafos en <strong>negrilla con strong</strong></p> <!-- en esta normalmente es mas importante -->
+
+    <!--otras caracteristicas de parrafos para formatear texto-->
+    <p>Texto <big>Grande con big</big></p>
+    <p>Texto <small>pequeño con small</small></p>
+
+    <p>Texto en <i>cursiva con i</i></p>
+
+    <p>texto en <sub>subindice</sub> con sub = log <sub>2</sub></p>
+    <p>texto en <sup>superindice</sup> con sup = x <sup>3</sup></p>
+
+    <p>texto <ins>subrrayado con ins</ins></p>
+
+    <p>texto <del>tachado con del</del></p>
+    <p>texto <s>tachado con s</s></p>
+    <br>
+
+    <!-- con br hacemos saltos de linea-->
+    <a id ="saltos_linea"><h3>saltos de linea</h3></a>
+    
+    <p>El siguiente parrafo <br>tendra un salto de linea<br>con br</p>
+
+    <pre>El siguiente parrafo tiene un salto de linea
+con pre, y me lo muestra tal y como lo tenga en en el documento,
+            con tablulaciones tambien.
+    </pre>
+
+    <hr>
+
+
+                <!-- LISTAS-->
+    <!-- listas desordenadas-->
+
+    <a name="listas_desordenadas" ></a>
+
+        <p><h3>LISTAS</h3></p>
+    <p><h4>ul para listas desordenadas</h4></p> 
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <p>con la viñeta circle</p>
+    <ul type = "circle"> <!-- cambia la viñeta-->
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <p>con la viñeta square</p>
+    <ul type = "square"> <!-- cambia la viñeta-->
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <p>con la viñeta disc</p>
+    <ul type = "disc"> <!-- cambia la viñeta-->
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <!-- listas ordenadas-->
+
+    <a name="listas_ordenadas" ></a>
+    
+    <p><h4>ol para listas ordenadas</h4></p> 
+
+    <p>lista por defecto</p>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <p>con type = "A"</p>
+    <ol type ="A">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <p>con type = "i"</p>
+    <ol type ="i">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+    </ol>
+
+    <p>con type = "I"</p>
+    <ol type ="I">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+    </ol>
+    
+    <br>
+
+    <p><h4>Vinculos</h4></p> 
+
+    <a name="vinculos" ></a>
+
+    <p>
+        visitar sitio web del consorcio de internet.
+        <a href="https://www.w3.org">clic aqui</a>.
+    </p>
+    <p>
+        visitar sitio web del consorcio de internet en nueva pestaña.
+        <a href="https://www.w3.org" target="_blank">clic aqui</a> .
+    </p>
+
+    <p><h4>Enlaces a una pagina propia</h4></p> 
+
+    <p>
+        <a href="hola_mundo.html" >visitar pagina hola mundo </a>
+    </p>
+    <p>
+        <a href="hola_mundo.html" target="_blank" >visitar pagina hola mundo en otra pestaña </a>
+    </p>
+    
+
+    <a href="#menu" > Volver al menu</a>
+
+                    <!-- TABLAS-->   
+    <!-- tr para crear filas, y th para crear celdas y td para cualquiera-->
+    <a name="tablas"><h3>Tablas</h3></a>
+
+    <table>
+        <tr>
+            <th> ID </th>
+            <th> NOMBRE </th>           <!-- filas-->
+            <th> APELLIDO </th>
+            <th> CIUDAD </th>
+        </tr>
+        <tr>
+            <td> 01220371068 </td>
+            <td> Andres </td>           <!-- celdas-->
+            <td> Elizalde </td>
+            <td> Bucaramanga </td>
+        </tr>  
+        <tr>  
+            <td> 01220371058 </td>
+            <td> Santiago </td>         
+            <td> Ospina </td>
+            <td> Bucaramanga </td>
+        </tr>
+    </table>
+
+    <h4>bordes en tablas</h4>
+    <table border="3">
+        <tr>
+            <th> ID </th>
+            <th> NOMBRE </th>           <!-- filas-->
+            <th> APELLIDO </th>
+            <th> CIUDAD </th>
+        </tr>
+        <tr>
+            <td> 01220371068 </td>
+            <td> Andres </td>           <!-- celdas-->
+            <td> Elizalde </td>
+            <td> Bucaramanga </td>
+        </tr>  
+        <tr>  
+            <td> 01220371058 </td>
+            <td> Santiago </td>         
+            <td> Ospina </td>
+            <td> Bucaramanga </td>
+        </tr>
+    </table>
+
+    <h4>tamaños de tablas</h4>
+    <table border="3" width="90%">
+        <tr>
+            <th> ID </th>
+            <th> NOMBRE </th>           <!-- filas-->
+            <th> APELLIDO </th>
+            <th> CIUDAD </th>
+        </tr>
+        <tr>
+            <td> 01220371068 </td>
+            <td> Andres </td>           <!-- celdas-->
+            <td> Elizalde </td>
+            <td> Bucaramanga </td>
+        </tr>  
+        <tr>  
+            <td> 01220371058 </td>
+            <td> Santiago </td>         
+            <td> Ospina </td>
+            <td> Bucaramanga </td>
+        </tr>
+    </table>
+
+    <h4>posicion de las tablas</h4>
+    <table border="3" width="40%" align ="center">
+        <tr>
+            <th> ID </th>
+            <th> NOMBRE </th>           <!-- filas-->
+            <th> APELLIDO </th>
+            <th> CIUDAD </th>
+        </tr>
+        <tr>
+            <td> 01220371068 </td>
+            <td> Andres </td>           <!-- celdas-->
+            <td> Elizalde </td>
+            <td> Bucaramanga </td>
+        </tr>  
+        <tr>  
+            <td> 01220371058 </td>
+            <td> Santiago </td>         
+            <td> Ospina </td>
+            <td> Bucaramanga </td>
+        </tr>
+    </table>
+
+    <h4>tamaño de celdas y centrar alguna celda</h4>
+    <table border="3" width="70%" align ="center">
+        <tr>
+            <th width="40%"> ID </th>
+            <th> NOMBRE </th>           <!-- filas-->
+            <th> APELLIDO </th>
+            <th> CIUDAD </th>
+        </tr>
+        <tr>
+            <td align="center"> 01220371068 </td> <!-- centrar celda-->
+            <td> Andres </td>           <!-- celdas-->
+            <td> Elizalde </td>
+            <td> Bucaramanga </td>
+        </tr>  
+        <tr>  
+            <td> 01220371058 </td>
+            <td> Santiago </td>         
+            <td> Ospina </td>
+            <td> Bucaramanga </td>
+        </tr>
+    </table>
+
+    <h4>combinar celdas y columnas y centrarla</h4>
+    <table border="3" width="40%" align ="center">
+        <tr>
+            <th> ID </th>
+            <th> NOMBRE </th>           
+            <th> APELLIDO </th>
+            <th> CIUDAD </th>
+        </tr>
+        <tr>
+            <td> 01220371068 </td>
+            <td align="center" colspan="2"> Andres </td>           <!-- unir celdas-->
+            <!-- <td> Elizalde </td> -->
+            <td> Bucaramanga </td>
+        </tr>  
+        <tr>  
+            <td> 01220371058 </td>
+            <td> Santiago </td>         
+            <td rowspan ="2"> Ospina </td>
+            <td> Bucaramanga </td>
+        </tr>
+        <tr>  
+            <td> 01220371058 </td>
+            <td> Santiago </td>         
+            <!-- <td> Ospina </td> -->    <!-- unir columnas-->
+            <td><a href="https://goo.gl/maps/GAg32mJDx4YpvFhF7" target="_blank">Bucaramanga</a> </td>
+        </tr>
+    </table>
+
+    <h4>tabla con imagen</h4>
+    <table border="3"  align ="center" width="30%">
+        <tr>
+            <th> ID </th>
+            <th> NOMBRE </th>           <!-- filas-->
+            <th> APELLIDO </th>
+            <th> CIUDAD </th>
+            <th> FOTO </th>
+        </tr>
+        <tr>
+            <td> 01220371068 </td>
+            <td> Andres </td>           <!-- celdas-->
+            <td> Elizalde </td>
+            <td> Bucaramanga </td>
+            <td> <img src="../img/cheems.jpg" 
+                alt="Si no se muestra la imagen se muestra este texto" 
+                width="100%" 
+                border ="" 
+                align ="center" 
+                hspace =""></td>
+        </tr>  
+        <tr>  
+            <td> 01220371058 </td>
+            <td> Santiago </td>         
+            <td> Ospina </td>
+            <td> Bucaramanga </td>
+            <td><img src="../img/chemms_mamado.jpeg" 
+                alt="Si no se muestra la imagen se muestra este texto" 
+                width="100%" 
+                border ="" 
+                align ="center" 
+                hspace =""></td>
+        </tr>
+
+        <tr>  
+            <td> 01220371045 </td>
+            <td> gustavo </td>         
+            <td> petro </td>
+            <td> <a href="https://goo.gl/maps/LdTeRSdaHtmxBVEK8" target="_blank">cienaga de oro</a></td>
+            <td><img src="../img/Petro.jpg" 
+                alt="Si no se muestra la imagen se muestra este texto" 
+                width="100%" 
+                border ="" 
+                align ="center" 
+                hspace =""></td>
+        </tr>
+    </table>
+
+
+                    <!-- FORMULARIOS -->
+    <a name="formularios" ><h3>Formularios</h3></a>
+    <form> 
+        
+        <label for="txtusuario">usuario: </label>
+        <input type="text" name ="txtusuario" id="txtusuario">
+
+        <br><br>
+
+        <label for="passcontrasena">contraseña: </label>
+        <input type="password" name="passcontrasena" id="passcontrasena">
+
+        <br><br>
+        <p>Elija el nivel de programacion que tiene</p>
+        <input type="radio" name="rdnivelprog" id="nivelbasi" value="nivelbasi">
+        <label for="rdnivelprog">Basico</label>
+
+        <input type="radio" name="rdnivelprog" id="nivelinter" value="nivelinter">
+        <label for="rdnivelprog">intermedio</label>
+
+        <input type="radio" name="rdnivelprog" id="nivelavan" value="nivelavan">
+        <label for="rdnivelprog">Avanzado</label>
+
+        <br><br>
+        <p>lenguajes de programacion que domina</p>
+        <input type ="checkbox" name ="lengprog" id="python" value="python">
+        <label for="python">Python</label>
+
+        <input type ="checkbox" name ="lengprog" id="java" value="java">
+        <label for="python">Java</label>
+
+        <input type ="checkbox" name ="lengprog" id="go" value="go">
+        <label for="python">Go</label>
+
+        <input type ="checkbox" name ="lengprog" id="javascript" value="javascript">
+        <label for="python">JavaScript</label>
+
+
+
+
+
+
+
+        <br><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+        <br><br><br><hr>
+    
+
+    <table border="3">
+        <tr>
+            <td><label for="txtusuario">usuario: </label></td>
+            <td><input type="text" name ="txtusuario" id="txtusuario"></td>
+        </tr>
+        <tr>
+            <td><label for="passcontrasena">contraseña: </label></td>
+            <td><input type="password" name="passcontrasena" id="passcontrasena"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Elija su nivel de programacion</td>
+        </tr>
+
+        <tr>
+            <td colspan="3"><input type="radio" name="rdnivelprog" id="nivelbasi" value="nivelbasi">
+                <label for="rdnivelprog">Basico</label><input type="radio" name="rdnivelprog" id="nivelinter">
+                <label for="rdnivelprog">intermedio</label><input type="radio" name="rdnivelprog" id="nivelavan">
+                <label for="rdnivelprog">Avanzado</label></td>
+        </tr>
+    
+        <tr>
+            <td colspan="2">Elija los lenguales de programacion que maneja</td>
+        </tr>
+        <tr>
+            
+            <td colspan="2">
+                <input type ="checkbox" name ="lengprog" id="python" value="python">
+                <label for="python">Python</label>
+        
+                <input type ="checkbox" name ="lengprog" id="java" value="java">
+                <label for="python">Java</label>
+        
+                <input type ="checkbox" name ="lengprog" id="go" value="go">
+                <label for="python">Go</label>
+        
+                <input type ="checkbox" name ="lengprog" id="javascript" value="javascript">
+                <label for="python">JavaScript</label>
+            </td>
+        </tr>
+        <tr>
+            <td align = "center" colspan="3"><input type="submit" value="Enviar" id="Enviar"></td>
+        </tr>
+        
+    </table>
+
+    <!-- <video width="320" height="248" controls autoplay loop src="../video/videobunny.mp4"></video> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ue9vBU0bjA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!-- esto es lo que arroja youtube para compartir-->
+
+
+    <!--el Div sirve para dividir la pagina como en secciones no visibles, pero utilizables por aparte-->
+    <div></div>
+
+    <p>Este es un span en linea <span style="border: 1px solid black">hola mundo</span>, el elemento dentro de un parrafo</p>
+    <p>El elemento SPAN es un elemento de linea y no comenzara en una linea nueva y solo ocupara el ancho necesario</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br>
+    <a href="#menu" > Volver al menu</a>
+
+</body>
+</html>

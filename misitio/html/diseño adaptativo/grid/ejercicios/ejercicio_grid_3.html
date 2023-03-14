@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+            margin: 10%;
+            font-size: 30px;
+
+        }
+
+        .grid-container{
+           display: grid; 
+           grid-template-columns: 25% 25% 25% 25%;
+           grid-template-rows: 33% 33% 33%;
+           height: 80%;
+           width: 80%;
+           gap: 1em;
+           text-align: center;
+
+        }
+
+        [class*="grid-item"]{
+            padding: 10px;
+        }
+
+        .grid-item1{
+            grid-column: 1/span 2;
+            grid-row: 1/span 2;
+            background-color: rgba(25,35,47,255);
+            color: white;
+            border-radius: 35px;
+            text-align: justify;
+        }
+        .grid-item2{
+            background-color: rgba(234,156,56,255);
+            border-radius: 100%;
+        }
+        .grid-item3{
+            background-color: rgba(177,193,206,255)
+
+            ;
+            border-radius: 100%;
+        }
+        .grid-item4{
+            background-color: rgba(25,35,47,255);
+            border-radius: 100%;
+        }
+        .grid-item5{
+            background-color: rgba(177,193,206,255)
+
+            ;
+            border-radius: 100%;
+        }
+        .grid-item6{
+            background-color: rgba(234,156,56,255);
+            border-radius: 100%;
+        }
+        .grid-item7{
+            background-color: rgba(25,35,47,255);
+            border-radius: 100%;
+        }
+        .grid-item8{
+            background-color: rgba(177,193,206,255)
+
+            ;
+            border-radius: 100%;
+        }
+        .grid-item9{
+            background-color: rgba(25,35,47,255);
+            border-radius: 100%;
+        }
+        img{
+            height: 80%;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">
+            <h1>Grid Layout IV</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, aperiam at magnam molestias qui saepe et totam eos numquam nulla consectetur cumque praesentium sequi dicta, dolores aut culpa maxime omnis.</p>
+        </div>
+        <div class="grid-item2"></div>
+        <div class="grid-item3"><img src="https://dsm01pap001files.storage.live.com/y4mkbSRgobumrTbL9KUexwCm6dI1l4zEagfGLf70nUUsoidLWgKyx_daOMKewfY3EM1fpExoIG8fHxRYAEbUmkowqcHY_yv7TakAEDL-V3zY3o2vbA9OimXx2A0rIOa_7lNTJa-aBEEyl4qXPCvVV1nTapp1qSC0eRdwNoPdsKhOEf_GZoqS8uRsMrwsvnA0lN50DoDjntjaveqPFnuR6XRHg?encodeFailures=1&width=512&height=512" alt=""></div>
+        <div class="grid-item4"><img src="https://dsm01pap001files.storage.live.com/y4mhjkYaOWnbE-bwVyt8CpigSzITIamj_XqoobkPkWHxkWuxB-7BpPQXSLQepq1C4SptfMuMx8oeFab7peD-8TlTxiFx-A_BDiCGwIfP19sghp5DHympQAcVRcfxhHIaoF7yFhLH9t0LH-wnztW2tOnOXygYMG93Urc87sJfvrpXIzqsC0zgShjhEAQMmmtyfTZ3xmg3pIVFtH08RmExhisYQ?encodeFailures=1&width=512&height=512"  alt=""></div>
+        <div class="grid-item5"><img src="https://dsm01pap001files.storage.live.com/y4md1TXLEVVHyB-tKNBG67nFTdIpM2YQ7BuS5zjY_PvJzu2Z5kPmmSBa0b_AWc484H7o7YsnA278SIDo9s-QpZwk00yxSivCOrStCqQfR6fA1x_djhx4LkbyEVj6NDTZRxFEP-qiTMuNK3EwzmPUhtxO_-Jo5_H3qKXsQ6OYxl4HvGlPNXaa7ZMvtWuu4qFtO8qivlp3RveqzG2q2fOgfqN1Q?encodeFailures=1&width=512&height=512" alt=""></div>
+        <div class="grid-item6"><img src="https://dsm01pap001files.storage.live.com/y4mJzz8VIBH8Y0i70V-K5po8T_3nvroFXupD-bwB_xXGuzfS6Van_M7jl-flPWMfQY9l2N_ZgWf5EpfdkvBnRJlBkVmc1o4g_1pbKYK2rRRKgIZXYvv1siuT1ntjFV8ssi3Us1Uo6i9lIPjYb8SsxugojW1jW20cn48RHpIXzaXF9Hk4ae3MZkfNG6IegeZB_BRoMIJQQZv9mR43Zbsryw0uA?encodeFailures=1&width=512&height=512" alt=""></div>
+        <div class="grid-item7"></div>
+        <div class="grid-item8"><img src="https://dsm01pap001files.storage.live.com/y4mIa-HnLx7pEo0kTjrmRwztqaM_MB3aImgt5h7U2FnV-K_v7SGXiTS3xrPpLhv0Dt9ZSO9748tB8Ki9IpJsluLiOLb1hX05s55B6wGy5gfsL4GOxixCp2p2H-YQrHFP8wBfrsJmfZoH9XCzTOCvbADVaj_C0to4CSWZWp0VkS_WGdUty09RQzT_wsd4P-EM3iHL8Isim_puCRE2FlbffIVBw?encodeFailures=1&width=512&height=512" alt=""></div>
+        <div class="grid-item9"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+/*
+-Asi se hacen comentarios de varias lineas
+
+-Estamos referenciando con parablas clave
+*/
+
+h1{
+    color:navy;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 400%;
+}
+
+
+body{
+    background-color:khaki;
+    background-image: url(../img/fondo_elegante.jpg);
+}
+
+
+p{
+    color:#2f42ad;
+}
+
+
+.otroparrafo{  /* asi referenciamos parratos en especifico que se necesita que sea diferente*/
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:cadetblue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+#numero{
+    font-size: xx-large;
+    color:aqua;
+    border: 1px solid blue; /* solid es el estilo de la linea*/
+}
+
+
+/* Referenciado por ruta*/
+body>div>div>img{
+    border: 10px dotted #ff0000;
+    width: 10%;
+}
+

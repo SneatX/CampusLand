@@ -1,0 +1,56 @@
+
+/*https://webgradients.com/*/
+
+
+
+h2{
+    
+    font-style: italic;
+    font-style: oblique;
+    
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+
+
+body{
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+    justify-content: center;
+}
+
+#section{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.center{
+    text-align: center;
+}
+
+footer tr table{
+    text-align: center;
+}
+hr{
+    background-color:black;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+
+
+
+@media screen {
+    
+}

@@ -1,0 +1,65 @@
+<!-- VISTA DE CUADRICULA -->
+<!-- se usa normalmente para dividir la pagina por secciones o columnas y hacer la pagina en base a estas, como decir una cuadricula guia -->
+
+<!-- Box-sizing: Define como se debe calcular el ancho y la altura de un elemento, si debe incluir relleno o bordes -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .div1{
+            width: 300px;
+            height: 100px;
+            border: 1px solid blue;
+        }
+
+        .div2{
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+            border: 1px solid red;
+        }
+        /*-------------------------------------------------------------------*/
+        .div3{
+            width: 300px;
+            height: 100px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        .div4{
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+            border: 1px solid red;
+            box-sizing: border-box ;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sin box-sizing</h1>
+
+    <div class="div1">
+        Este div es pequeño(width 300px y height es 100px).
+    </div>
+    <br>
+    <div class="div2">
+        Este div esgrande (width es also 300px y height es 100px)
+    </div>
+<!------------------------------------------------------------------->
+    <h1>Con box-sizing</h1>
+
+    <div class="div3">
+        Este div es pequeño(width 300px y height es 100px).
+    </div>
+    <br>
+    <div class="div4">
+        Este div esgrande (width es also 300px y height es 100px)
+    </div>
+</body>
+</html>

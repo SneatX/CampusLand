@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de prueba de HTML5.</title>
+</head>
+<body>
+    
+
+    
+    <form>
+        <table border="3">
+            <tr>
+                <th colspan="2"> CUESTIONARIO </th>
+            </tr>
+            <tr>
+                <td> <label for="txtusuarrio">Nombre: </label> </td>
+                <td> <input type="text" name = txtusuarrio autofocus id ="txtusuarrio" > </td>           <!-- celdas-->
+            </tr>  
+            <tr>  
+                <td> <label for="email">Correo electronico:</label> </td>
+                <td> <input type="email" id="email" name="email"> </td>         
+            </tr>
+            <tr>
+                <td><label for="urlusuario">URL: </label></td>
+                <td> <input type="url" id="urlusuario" name="urlusuario" placeholder="Escribe la URL de tu pagina">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fecha">Fecha: </label></td>
+                <td><input type="date" id = "fecha" name = "fecha"></td>
+            </tr>
+            <tr>
+                <td><label for="tiempo">Tiempo: </label></td>
+                <td><input type="time" id = "tiempo" name = "tiempo"></td>
+            </tr>
+            <tr>
+                <td><label for="tiempo_fecha">Fecha y hora: </label></td>
+                <td> <input type="datetime-local" id = "tiempo_fecha" name = "tiempo_fecha">
+            </td>
+            </tr>
+            <tr>
+                <td><label for="mes">Mes: </label></td>
+                <td><input type="month" id = "mes" name = "mes"></td>
+            </tr>
+            <tr>
+                <td><label for="mes_selec">Seleccionar - Mes</label></td>
+                <td>
+                    <select name="mes_selec" id="mes_selec">
+                        <option value="nomes"></option>
+                        <option value="mes1">Enero</option>
+                        <option value="mes2">Febrero</option>
+                        <option value="mes3">Marzo</option>
+                        <option value="mes4">Abril</option>
+                        <option value="mes5">Mayo</option>
+                        <option value="mes6">Junio</option>
+                        <option value="mes7">Julio</option>
+                        <option value="mes8">Agosto</option>
+                        <option value="mes9">Septiempre</option>
+                        <option value="mes10">Octubre</option>
+                        <option value="mes11">Noviembre</option>
+                        <option value="mes12">Diciembre</option>
+
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="semana-selec" id="semana_selec">Seleccionar - Semana</label></td>
+                <td>
+                    <input type="number" id ="semana-selec" name="semana-selec" min="1" max="52">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="semana-selec">Seleccionar semana: </label></td>
+                <td><input type="number" id = "semana-selec" name = "semana-selec" min="1" max="52" ></td>
+            </tr>
+            <tr>
+                <td><label for="numero_usuario">Numero (min -10, max 10): </label></td>
+                <td><input type="number" id = "numero_usuario" name = "numero_usuario" min="-10" max="10" ></td>
+            </tr>
+            <tr>
+                <td><label for="telefono_usuario">Teléfono: </label></td>
+                <td><input type="tel" id = "telefono_usuario" name = "telefono_usuario"></td>
+            </tr>
+            <tr>
+                <td><label for="tipo_busqueda">Término de búsqueda: </label></td>
+                <td><input type="search" id = "tipo_busqueda" name = "tipo_busqueda"></td>
+            </tr>
+            <tr>
+                <td><label for="color_elegido">Color favorito: </label></td>
+                <td><input type="color" id = "color_elegido" name = "color_elegido"></td>
+            </tr>
+            <tr>
+                <td><label for="texcomentarios" id="textcomentarios">Comentarios</label></td>
+                <td><textarea name="texcomentarios" id="texcomentarios" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="archivos" id="archivos">Seleccione un archivo</label></td>
+                <td><input type="file" accept="image/png,image/jpg"></td>
+            </tr>
+            <tr>
+                
+                <td colspan="2" align="center"><button type ="submit" method="post">Enviar</button> </td>
+            </tr>
+        </table>
+  
+        
+
+    </form>
+
+</body>
+</html>

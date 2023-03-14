@@ -1,0 +1,88 @@
+body{
+   border: 1px solid red; 
+   box-shadow: 10px 10px gray;
+   
+}
+
+
+p>a{
+    color: red;
+}
+p>a>em{
+    color: blue;
+}
+
+
+h1{
+    color:darkcyan;
+}
+
+
+h2{
+    color: blue;
+}
+
+
+strong{
+    color: red;
+}
+
+
+.destacado{
+    color:gold;
+}
+
+
+body>p>.especial{
+    color:darkmagenta;
+}
+
+div>p{
+    color:olive;
+}
+
+
+#especial{
+    color: rgb(247, 0, 255);
+}
+
+
+div>p>a{
+    color:rgb(4, 173, 4);
+}
+
+
+table>caption{
+    color: blue;
+}
+
+
+th{
+    color:rgb(255, 219, 56);
+}
+
+
+th{
+    color:red;
+}
+
+th.especial{
+    color:rgb(255, 219, 56);
+}
+
+
+td{
+    color: green;
+}
+
+
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td>strong{
+    color:rgb(255, 219, 56) ;
+}
+
+
