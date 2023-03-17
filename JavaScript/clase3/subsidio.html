@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subsidio</title>
+</head>
+<body>
+    <h1>Calcular si recibe o no subsidio de transporte</h1>
+
+    <p id="todo"></p>
+
+
+    <script>
+        let nombre = prompt("Ingrese su nombre");
+        let sueldo = Number(prompt(`${nombre} ingrese su sueldo por favor`));
+        let respuesta = prompt(`${nombre}¿Le gustaria saber cual es el total? [Y/N]`);
+
+        if (sueldo <= 1200000){
+            var subsidio = 120000;
+        }else{
+            var subsidio = 0;
+        }
+
+        let total = sueldo + subsidio
+        console.log(`El subsidio sera de: $ ${subsidio}`);
+
+
+
+        if (respuesta == "Y"){
+            console.log(`Su nomina total sera de: $${total}`)
+        }else{
+            console.log("Gracias por su atencion :3")
+        }
+
+
+        document.getElementById("todo").innerHTML = `
+        ${nombre} recibira un suelto total de: $${total}
+        con un subsidio de: $${subsidio}`;
+
+    </script>
+</body>
+</html>

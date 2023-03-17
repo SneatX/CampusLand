@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+</head>
+<body>
+    <h1>Ejercicio cuadrado</h1>
+
+    <p id="base"></p>
+    <p id="altura"></p>
+    <p id="area"></p>
+
+
+
+    <script>
+        let num1 = prompt("Ingrese la base del cuadrado: ")
+        let num2 = prompt("Ingrese el la altura del cuadrado: ")
+
+        let base = Number(num1)
+        let altura = Number(num2)
+        let area = base * altura
+
+        console.log(area)
+
+        document.getElementById("base").innerHTML = `Base del cuadrado: ${base}`
+        document.getElementById("altura").innerHTML = `Altura del cuadrado: ${altura}`
+        document.getElementById("area").innerHTML = `area total del cuadrado: ${area}`
+
+    </script>
+</body>
+</html>
