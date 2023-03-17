@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="prueba"></p>
+
+
+    <script>
+        let numero1 = prompt("Ingrese el numero 1")
+        let numero2 = prompt("Ingrese el numero 2")
+
+        let num1 = Number(numero1);
+
+        let num2 = Number(numero2);
+
+        let suma = num1 + num2;
+        let resta = num1 - num2;
+        let producto = num1 * num2;
+        let cociente = num1 / num2;
+    
+        console.log(`Sean dos numeros: ${num1} y ${num2}`)
+        console.log(`La suma es ${".".repeat(11)}: ${suma}`);
+        console.log(`La resta es ${".".repeat(10)}: ${resta}`);
+        console.log(`La producto es ${".".repeat(7)}: ${producto}`);
+        console.log(`La cociente es ${".".repeat(7)}: ${cociente}`);
+
+
+        document.getElementById("prueba").innerHTML = `Sean dos numeros: ${num1} y ${num2}
+        <br> La suma es ${".".repeat(11)}: ${suma} 
+        <br> La resta es ${".".repeat(10)}: ${resta}
+        <br> La producto es ${".".repeat(7)}: ${producto}
+        <br> La cociente es ${".".repeat(7)}: ${cociente}`
+
+        
+    </script>
+</body>
+</html>
