@@ -8,65 +8,15 @@
     <title>Document</title>
 </head>
 <body>
-    <table class="table table-bordered">
-        <tr>
-            <th>cedula</th>
-            <th>nombre</th>
-            <th>horas trab</th>
-            <th>valor hora</th>
-            <th>sal bruto</th>
-            <th>EPS</th>
-            <th>pension</th>
-            <th>aux trans</th>
-            <th>sal Neto</th>
-        </tr>
-        <tr>
-            <tr id="TABLA"></tr>
-        </tr>
+    <table id="TABLA" class="table table-bordered">
+
     </table>
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-        w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-        w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-        <script>
-            var cedula = prompt("Ingrese la cedula, para finalizar el programa ponga 0: ");
-
-            while (cedula != "0"){
-                const salarioMinimo = 1160000
-                
-                let nombre = prompt("Ingrese su nombre: ");
-                let horas = Number(prompt("ingrese la cantidad de horas trabajadas: "));
-                let valHora = Number(prompt("Ingrese el valor de cada hora: "));
-                
-                let salBruto = horas * valHora ;
-                let EPS = salBruto * 0.04;
-                let pension = salBruto * 0.04;
-                
-                if (salBruto <= salarioMinimo){
-                    var auxTransporte = 140606;
-                }else{
-                    salBruto <= 0;
-                }
-
-                let salarioNeto = salBruto + auxTransporte - EPS - pension;
-
-                document.getElementById("TABLA").innerHTML = `
-                                                            <tr>
-                                                                <td>${cedula}</td>
-                                                                <td>${nombre}</td>
-                                                                <td>${horas}</td>
-                                                                <td>$${valHora}</td>
-                                                                <td>$${salBruto}</td>
-                                                                <td>$${EPS}</td>
-                                                                <td>$${pension}</td>
-                                                                <td>$${auxTransporte}</td>
-                                                                <td>$${salarioNeto}</td>
-                                                            </tr>`
-
-            var cedula = prompt("Ingrese la cedula, para finalizar el programa ponga 0: ");
-            }
-            
-        </script>
+    <script src="index.js"> </script>
+        
 </body>
 </html>
