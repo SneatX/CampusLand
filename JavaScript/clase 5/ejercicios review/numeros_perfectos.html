@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>numeros perfectos</h1>
+
+
+
+    <script>
+        function numeroPerfecto (max){
+            for (let numero = 1 ; numero <= max ; numero++){
+              var suma = 0;
+              
+              for (let divisor = 1 ; divisor < numero ; divisor++){
+                if (numero % divisor === 0){
+                  var suma = suma + divisor;
+                }
+              }
+              if (suma === numero){
+                console.log(suma)
+              }
+            }
+          }
+          
+          let max = Number(prompt("Ingrese el numero maximo: "));
+          numeroPerfecto(max)
+    </script>
+</body>
+
+</html>
