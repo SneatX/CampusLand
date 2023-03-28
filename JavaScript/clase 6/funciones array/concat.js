@@ -1,4 +1,4 @@
-//agrega o elimina elementos del array y devuelve los elementos eliminados
+//concatena 2 arrays
 
 let arr1 = [1,2,3];
 let arr2 = [4,5,6];
