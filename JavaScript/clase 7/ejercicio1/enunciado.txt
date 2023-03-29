@@ -1,0 +1,13 @@
+# Enunciado
+
+Tienes un array de objetos que representan datos de productos con los siguientes atributos:
+
+* name
+* price
+* stock
+
+Tu reto hace una función que devuelva un nuevo vector con el valor de los impuestos. Debes tener en cuenta que como resultado se debe dejar un valor entero, **sin decimales**.
+
+La función recibe como parámetros un vector y el impuesto a aplicar.
+
+Por ejemplo si aplicamos el **19%** de impuestos para un producto con precio de **$1000** el resultado de los "taxes" será **$190**, o para un producto con precio de $656 el resultado de los "taxes" será **$124**.
