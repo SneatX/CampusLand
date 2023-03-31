@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Bootstrapt-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <title>Ejemplo DOM</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Ordenar arrays de cadenas</h1>
+          <hr />
+          <p class="lead">
+            Ingrese conmbres en la caja de texto de abajo y ordene este listado
+            el cual aparece en el area de texto
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <form action="" name="miformulario">
+            <div class="col-12 mb-3 input-group">
+              <label for="nombre" class="form-label me-2">Nombre: </label>
+
+
+                <!------------Cuadro de texto donde se escribe el nombre------------>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                class="form-control-lg"
+              />
+                <!------------Boton de agregar nombres------------>
+              <input
+                type="button"
+                value="Agregar y ordenar nombre"
+                name="agregarnombre"
+                id="agregarnombre"
+                onclick="ordenar2()"
+                class="btn btn-primary form-control-lg"
+              />
+            </div>
+
+            <h2>Nombres ordenados</h2>
+            <hr/>
+
+            <div class="row">
+              <div class="col-10">
+                <!------------Cuadro donde se ordena------------>
+                <textarea 
+                  name="ordenados1"
+                  id="ordenados"
+                  cols="60"
+                  rows="10"
+                  placeholder="Aqui apareceran los nombres ordenados "
+                  class="form-control-lg"
+                  
+                >
+                </textarea>
+              </div>
+              <div class="col-2">
+                  <!------------Boton de limpiar------------>
+                <input
+                  type="button"
+                  value="Limpiar"
+                  name="limpiarTxtArea1"
+                  id="limpiarTxtArea"
+                  onclick=flimpiarTxtArea()
+                  class="btn btn-primary form-control-lg"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Script js-->
+    <script src="ordenar-nombres.js"></script>
+    <!--Script Bootstrapt-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
