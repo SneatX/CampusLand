@@ -27,7 +27,7 @@
                         <tr>
                             <td>
                                 <label for="cantidad">cantidad</label>
-                                <input type="text" name="cantidad" id="cantidad">
+                                <input type="number" name="cantidad" id="cantidad">
                             </td>
                         </tr>
                         <tr>
@@ -44,7 +44,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <button type="button" class="btn btn-primary" onclick="tabla()">Ingreso de datos</button>
+                                <button type="button" class="btn btn-primary" onclick="tabla()">Ingreso de
+                                    datos</button>
 
                             </td>
                         </tr>
@@ -77,49 +78,17 @@
 
 
     <script>
-        const buildFila = (mes, valor, valorTotal, capital, intereses, total) => {
-            return `<tr>
-          <td>${mes}</td>
-          <td>$${new Intl.NumberFormat().format(valor)}</td>
-          <td>$${new Intl.NumberFormat().format(valorTotal)}</td>
-          <td>$${new Intl.NumberFormat().format(capital)}</td>
-          <td>$${new Intl.NumberFormat().format(intereses)}</td>
-          <td>$${new Intl.NumberFormat().format(total)}</td>   
-      </tr>
-        `
-        }
-        const buildFila2 = (capital, intereses, total) => {
-            return `<tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>$${new Intl.NumberFormat().format(capital)}</td>
-        <td>$${new Intl.NumberFormat().format(intereses)}</td>
-        <td>$${new Intl.NumberFormat().format(total)}</td> 
-      </tr>
-      `
-        }
-
-        const buildFila3 = (valor, interesAnual, numeroPagos, valorTotal, total) => {
-            return `<tr>
-        <td>Monto de credito:</td>
-        <td>${valor}</td>
-      </tr>
-      <tr>
-        <td>Taza de interes: (anual)</td>
-        <td>${interesAnual}</td>
-      </tr>
-      <tr>
-        <td>Numero de pagos: </td>
-        <td>${valorTotal}</td>
-      </tr>
-      <tr>
-        <td>valor mensual</td>
-        <td>${total}</td>
-      </tr>
-      `
-        }
-
+    //     const buildFila = (mes, valor, valorTotal, capital, intereses, total) => {
+    //         return `<tr>
+    //       <td>${mes}</td>
+    //       <td>$${new Intl.NumberFormat().format(valor)}</td>
+    //       <td>$${new Intl.NumberFormat().format(valorTotal)}</td>
+    //       <td>$${new Intl.NumberFormat().format(capital)}</td>
+    //       <td>$${new Intl.NumberFormat().format(intereses)}</td>
+    //       <td>$${new Intl.NumberFormat().format(total)}</td>   
+    //   </tr>
+    //     `
+    //     }
 
         function tabla() {
 
@@ -134,20 +103,42 @@
             let intereses = (valor * (interesAnual / 100)) / numeroPagos
             let total = capital + intereses
 
-            strHTML += buildFila(1, valor, valorTotal, capital, intereses, total)
+            //strHTML += buildFila(1, valor, valorTotal, capital, intereses, total)
 
 
-            for (let mes = 2; mes <= numeroPagos; mes++) {
-                valor = valor - capital
-                valorTotal = valorTotal - (capital + intereses)
-                strHTML += buildFila(mes, valor, valorTotal, capital, intereses, total)
+            // for (let mes = 2; mes <= numeroPagos; mes++) {
+            //     valor = valor - capital
+            //     valorTotal = valorTotal - (capital + intereses)
+            //     strHTML += buildFila(mes, valor, valorTotal, capital, intereses, total)
 
+            // }
+
+            //document.getElementById("respuesta").innerHTML = strHTML
+
+            let vector = [valor, valorTotal, capital, intereses, total]
+            const fragment = document.createDocumentFragment()
+
+            for (let i = 0; i < numeroPagos; i++) {
+                console.log(numeroPagos)
+                const tr = document.createElement("tr")
+                let td=document.createElement("td")
+                const mes=i+1
+                td.textContent = mes
+                tr.appendChild(td)
+                for (let i = 0; i < vector.length; i++) {
+                    let td=document.createElement("td")
+                    td.textContent = new Intl.NumberFormat().format((vector[i]))
+                    tr.appendChild(td)
+                }
+                fragment.appendChild(tr)
+                vector[0] = vector[0] - vector[2]
+                vector[1] = vector[1] - (vector[2] + vector[3])
             }
-
-            strHTML += buildFila2(capital*numeroPagos, intereses*numeroPagos, total*numeroPagos)
-            document.getElementById("respuesta").innerHTML = strHTML
-
+            console.log(fragment)
+            let respuesta = document.getElementById("respuesta")
+            respuesta.appendChild(fragment)
         }
+
 
 
 
