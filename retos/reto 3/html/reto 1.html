@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrapt/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" name="miFormulario">
+            <div class="row">
+                <div class="col-3">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Ingreso de datos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="cedula">Cedula: </label>
+                                    <input type="text" name="cedula" id="cedula">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="nombre">Nombre: </label>
+                                    <input type="text" name="nombre" id="nombre">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="categoria">Categoria: </label>
+                                    <select name="categoria" id="categoria">
+                                        <option value="Auxiliar A">Auxiliar A</option>
+                                        <option value="Auxiliar B">Auxiliar B</option>
+                                        <option value="Tecnico A">Tecnico A</option>
+                                        <option value="Tecnico B">Tecnico B</option>
+                                        <option value="Profesional A">Profesional A</option>
+                                        <option value="Profesional B">Profesional B</option>
+                                        <option value="Director A">Director A</option>
+                                        <option value="Director B">Director B</option>
+                                        <option value="Gerente Departamento">Gerente Departamento</option>
+                                        <option value="Gerente General">Gerente General</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-primary" onclick="tabla()"> Ingreso de datos</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="col-9">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Cedula</th>
+                                <th>Nombre</th>
+                                <th>Categoria</th>
+                                <th>Salario Bruto</th>
+                                <th>Auxilio TX</th>
+                                <th>Bonificaciones </th>
+                                <th>EPS</th>
+                                <th>Pensión</th>
+                                <th>Salario Neto</th>
+                            </tr>
+                        </thead>
+                        <tbody id="respuesta">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <!--SCRIPT JS PERSONAL-->
+    <script src="reto_1.js"></script>
+    <!--SCRIPT BOOTSTRAPT-->
+    <script src="bootstrapt/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
