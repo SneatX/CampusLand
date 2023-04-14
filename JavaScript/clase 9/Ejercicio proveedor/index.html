@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>El mejor proveedor</title>
+</head>
+
+<body>
+    <h1>LISTADO DE PRECIOS PROVEEDORES 2023</h1>
+
+    <div class="containe">
+        <div class="row">
+            <div class="col-10">
+                <table class="table table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>PROVEEDOR</th>
+                            <th>PRODUCTO</th>
+                            <th>PRECIO 2022</th>
+                            <th>PRECIO 2023</th>
+                        </tr>
+                    </thead>
+                    <tbody id="respuesta">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-2">
+                <input type="button" value="Calcular proveedores" onclick="tabla1();" class="btn btn-info">
+            </div>
+        </div>
+    </div>
+
+
+    <h2>RESUMEN</h2>
+    <p>El producto con menor incremento</p>
+    <div class="containe">
+        <div class="row">
+            <div class="col">
+                <table class="table table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>PROVEEDOR</th>
+                            <th>PRODUCTO</th>
+                            <th>PRECIO 2022</th>
+                            <th>PRECIO 2023</th>
+                            <th>INCREMENTO</th>
+                        </tr>
+                    </thead>
+                    <tbody id="respuesta2">
+
+                    </tbody>
+                </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

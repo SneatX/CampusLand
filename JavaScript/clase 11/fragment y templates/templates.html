@@ -12,7 +12,7 @@
 
     <template>
         
-        <li class="list" id="lista-dinamica">
+        <li class="list" >
             <b>nombre:</b> <span class="text-danger">descripcion...</span>
         </li>
 
@@ -22,6 +22,7 @@
     <script>
         const lista = document.getElementById("lista-dinamica")
         const arrayItem = ["item 1", "item 2", "item 3"];
+        console.log(lista)
 
         const fragment = document.createDocumentFragment()
         const template = document.querySelector("template").content

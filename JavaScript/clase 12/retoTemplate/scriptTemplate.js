@@ -1,58 +1,11 @@
-const buildFila = (cedula, nombre, categoria, salarioBruto, auxilioTX, bonificaciones, EPS, pension, salarioNeto) => {
-    return `
-    <tr>
-    <td>${cedula}</td>
-    <td>${nombre}</td>
-    <td>${categoria}</td>
-    <td>${salarioBruto}</td>
-    <td>${auxilioTX}</td>
-    <td>${bonificaciones}</td>
-    <td>${EPS}</td>
-    <td>${pension}</td>
-    <td>${salarioNeto}</td>
-    `
-}
-const buildFila2 = (nota, espacio ,salarioBruto, auxilioTX, bonificacion, eps, pension, salarioNeto) => {
-    return `
-    <tr>
-    <td>${nota}</td>
-    <td>${espacio}</td>
-    <td>${espacio}</td>
-    <td>${salarioBruto}</td>
-    <td>${auxilioTX}</td>
-    <td>${bonificacion}</td>
-    <td>${eps}</td>
-    <td>${pension}</td>
-    <td>${salarioNeto}</td>
-    `
-
-}
-
-
-
-
-
-
-let salarioBrutoTotal = 0
-let auxilioTXTotal = 0
-let bonificacionTotal = 0
-let epsTotal = 0
-let pensionTotal = 0
-let salarioNetoTotal = 0
-
 function tabla() {
     let cedula = document.miFormulario.cedula.value
     let nombre = document.miFormulario.nombre.value
     let categoria = document.miFormulario.categoria.value
 
-    let strHTML = ""
     let salarioBruto
     let auxilioTX = 0
     let bonificacion
-    let empleadoMAS = 0
-    let nEmpleadoMas
-    let empleadoMENOS = Infinity
-    let nEmpleadoMenos
 
     if (categoria === "Auxiliar A") {
         salarioBruto = 1160000
@@ -101,16 +54,18 @@ function tabla() {
     let pension = salarioBruto * 0.04
     let salarioNeto = salarioBruto + auxilioTX + bonificacion - eps - pension
 
-    if (salarioNeto < empleadoMENOS) {
-        empleadoMENOS = salarioNeto
-        nEmpleadoMenos = nombre
+    if (categoria ==="Auxiliar A" || categoria ==="Auxiliar B" || categoria ==="Tecnico A" || categoria ==="Tecnico B" || categoria ==="Profesional A" || categoria ==="Profesional B") {
+        if (salarioNeto > empleadoMAS) {
+            nombreEmpleadoMas = nombre
+            empleadoMAS = salarioNeto
+        }
+        if (salarioNeto < empleadoMENOS) {
+            nombreEmpleadoMenos = nombre
+            empleadoMENOS = salarioNeto
+        }
     }
-    if (salarioNeto > empleadoMAS) {
-        empleadoMAS = salarioNeto
-        nEmpleadoMas = nombre
 
-    }
-
+    //Calculos totales tabla 1, fila 2
     salarioBrutoTotal += salarioBruto
     auxilioTXTotal += auxilioTX
     bonificacionTotal += bonificacion
@@ -119,9 +74,23 @@ function tabla() {
     salarioNetoTotal += salarioNeto
 
 
-    strHTML += buildFila(cedula, nombre, categoria, salarioBruto, auxilioTX, bonificacion, eps, pension, salarioNeto)
+    //Calculos totales tabla 2
+    cantEmpleados += 1
+    let promedio = salarioNetoTotal / cantEmpleados
 
-    strHTML += buildFila2("Suma total","---",salarioBrutoTotal, auxilioTXTotal, bonificacionTotal, epsTotal, pensionTotal, salarioNetoTotal)
 
-    return document.getElementById("respuesta").innerHTML = strHTML
+    //-----------fragment----------//
+    const lista = document.getElementById("respuesta")
+    const arrayItem = [cedula, nombre, categoria, salarioBruto, auxilioTX, bonificacion, eps, pension, salarioNeto]
+
+    const fragment = document.createDocumentFragment()
+    const template = document.querySelector("template").content
+
+    arrayItem.forEach((item) =>{
+        template.querySelector("td").textContent = item
+        const clone = template.cloneNode(true)
+        fragment.appendChild(clone)
+    })
+
+    lista.appendChild(fragment)
 }
